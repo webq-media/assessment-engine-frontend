@@ -1,0 +1,26 @@
+.upload-container-main {
+    height: 100vh;
+}
+
+.upload-container {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+   height: auto;
+   margin-top: 150px;
+  }
+  
+  .upload-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .upload-button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
