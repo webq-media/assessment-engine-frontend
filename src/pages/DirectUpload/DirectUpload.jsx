@@ -1,15 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Upload, Button, message, Modal } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import axios from '../../constants/axiosConfig';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import './DirectUpload.css';
 
 function DirectUpload() {
+    const location = useLocation();
+  const navigate = useNavigate();
+  const [selectedTabIndex, setSelectedTabIndex] = useState(0);
+
   const [fileList, setFileList] = useState([]);
   const [uploading, setUploading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [uploadResult, setUploadResult] = useState(null);
+
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+      navigate('/login');
+    }
+
+    if (location.state && location.state.activeTab !== undefined) {
+      setSelectedTabIndex(location.state.activeTab);
+    }else {
+      setSelectedTabIndex(0);
+    }
+    console.log("location",location);
+    console.log("location",location.state);
+  }, [location, navigate]);
 
   const handleUpload = async () => {
     if (fileList.length === 0) {
