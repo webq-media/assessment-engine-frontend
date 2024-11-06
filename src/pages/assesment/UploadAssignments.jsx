@@ -15,7 +15,7 @@ function UploadAssignments() {
     const [moduleName, setModuleName] = useState('');
     const [courseName, setCourseName] = useState('');
     const [assignments, setAssignments] = useState([]);
-    const [courses, setCourses] = useState([]); // State to hold course list
+    const [courses, setCourses] = useState([]); 
     const [modules, setModules] = useState([]); // State to hold module list
     const [loading, setLoading] = useState(false); // Loading state for button
     const [openModal, setOpenModal] = useState(false);
