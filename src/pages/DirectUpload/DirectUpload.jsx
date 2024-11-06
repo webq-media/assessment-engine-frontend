@@ -47,7 +47,7 @@ function DirectUpload() {
       }
     setUploading(true);
     try {
-      const response = await axios.post('/assessment_app/file_upload', formData, {
+      const response = await axios.post('/ai_assessment/file_upload/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setUploadResult(response.data);
