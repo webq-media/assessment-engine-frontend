@@ -1,0 +1,17 @@
+.logo-img{
+    height: 65px;
+}
+.ai-svg{
+    height: 66px;
+}
+.assesment-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 30.228px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: conic-gradient(from 264deg at 50% 50%, #26AF50 0deg, #104921 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

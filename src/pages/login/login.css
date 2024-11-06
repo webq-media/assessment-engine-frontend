@@ -1,0 +1,77 @@
+.login-page{
+    min-height: 100vh;
+}
+.login-left{
+    background: #F5F2EB;
+}
+.login-container{
+    min-height: 100vh;
+    width: 100%;
+}
+.login-head h4{
+    color: #C86000;
+    font-family: Inter;
+    font-size: 25.541px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.043px;
+}
+.login-head h2{
+    color: #0B434B;
+    font-family: "Inter Tight";
+    font-size: 60.607px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+.login-form label{
+    color: #0B434B;
+    font-family: Inter;
+    font-size: 20.802px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.login-form input{
+    margin-top: 9px;
+    border-radius: 16.444px;
+    border: 0.495px solid #17444C;
+    background: rgba(217, 217, 217, 0.00);
+    height:68px;
+    padding: 10px 10px 10px 60px;
+    font-family: Inter;
+    font-size: 17.454px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.login-form input::placeholder{
+    color: #065561;
+    font-weight: 300;
+}
+.login-form button{
+    border-radius: 16.444px;
+    background: #259D4A;
+    box-shadow: 0px 20.802px 28.43px 0px rgba(37, 157, 74, 0.22);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22.889px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    height: 68px;
+}
+.login-form button :hover{
+    background: #259D4A;
+}
+.input-svg{
+    position: absolute;
+    bottom: 18px;
+    left: 19px;
+}
+
+
+
